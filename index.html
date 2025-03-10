@@ -67,9 +67,6 @@
         </table>
     </div>
 
-    
-
-
     <!-- Alerts -->
     <div class="container mt-4">
         <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -121,8 +118,231 @@
         </button>        
     </div>
 
+    
+
+    <!-- List Groups -->
+    <div class="container mt-4">
+        <h2>List Groups</h2>
+        <ul class="list-group">
+            <li class="list-group-item">Item 1</li>
+            <li class="list-group-item">Item 2</li>
+            <li class="list-group-item">Item 3</li>
+        </ul>
+        <ul class="list-group list-group-numbered">
+            <li class="list-group-item">Numbered Item 1</li>
+            <li class="list-group-item">Numbered Item 2</li>
+        </ul>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Flush Item 1</li>
+            <li class="list-group-item">Flush Item 2</li>
+        </ul>
+        
+    </div>
+
+    <!-- Cards -->
+    <div class="container mt-4">
+        <h2>Card Example</h2>
+        <div class="card" style="width: 18rem;">
+            <img src="img/family-photo.jpg" class="card-img-top" alt="Family Photo">
+            <div class="card-body">
+                <h5 class="card-title">Our Family</h5>
+                <p class="card-text">A beautiful moment captured.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dropdowns -->
+    <div class="container mt-4">
+        <h2>Dropdown Examples</h2>
+        
+        <!-- Basic Dropdown -->
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                Basic Dropdown
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Option 1</a></li>
+                <li><a class="dropdown-item" href="#">Option 2</a></li>
+                <li><a class="dropdown-item" href="#">Option 3</a></li>
+            </ul>
+        </div>
+
+        <!-- Dropdown with Divider -->
+        <div class="dropdown mt-2">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                Dropdown with Divider
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">First Option</a></li>
+                <li><a class="dropdown-item" href="#">Second Option</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Separated Option</a></li>
+            </ul>
+        </div>
+
+        <!-- Dropdown with Header Sections -->
+        <div class="dropdown mt-2">
+            <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                Dropdown with Headers
+            </button>
+            <ul class="dropdown-menu">
+                <li><h6 class="dropdown-header">Category 1</h6></li>
+                <li><a class="dropdown-item" href="#">Item 1</a></li>
+                <li><a class="dropdown-item" href="#">Item 2</a></li>
+                <li><h6 class="dropdown-header">Category 2</h6></li>
+                <li><a class="dropdown-item" href="#">Item 3</a></li>
+            </ul>
+        </div>
+
+        <!-- Dropdown with Form Inside -->
+        <div class="dropdown mt-2">
+            <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                Dropdown with Form
+            </button>
+            <div class="dropdown-menu p-3">
+                <form>
+                    <div class="mb-3">
+                        <label for="dropdownSearch" class="form-label">Search</label>
+                        <input type="text" class="form-control" id="dropdownSearch" placeholder="Type here...">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Collapsible & Accordion -->
+    <div class="container mt-4">
+        <h2>Collapsible Example</h2>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample">
+            Toggle Content
+        </button>
+        <div class="collapse mt-2" id="collapseExample">
+            <div class="card card-body">
+                Hidden content revealed.
+            </div>
+        </div>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        Accordion Item #1
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">Content for accordion.</div>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+
+    <div class="container mt-4">
+        <ul class="nav nav-tabs">
+            <li class="nav-item"><a class="nav-link active" href="#">Tab 1</a></li>
+        </ul>
+        <ul class="nav nav-pills mt-2">
+            <li class="nav-item"><a class="nav-link active" href="#">Pill 1</a></li>
+        </ul>
+    </div>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Light Navbar</a>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Dark Navbar</a>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg" style="background-color: #007bff;">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">Colored Navbar</a>
+        </div>
+    </nav>
+    
+    
+    <!-- Modal -->
+    <div class="container mt-4">
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Modal 1</button>
+        <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modal2">Modal 2</button>
+    </div>
+    <div class="modal fade" id="modal1">
+        <div class="modal-dialog"><div class="modal-content"><div class="modal-body">Modal One</div></div></div>
+    </div>
+    <div class="modal fade" id="modal2">
+        <div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-body">Large Modal</div></div></div>
+    </div>
+
+
+    <!-- Tooltip & Popover -->
+    <div class="container mt-4">
+        <button class="btn btn-secondary" data-bs-toggle="tooltip" title="Tooltip">Hover</button>
+        <button class="btn btn-info" data-bs-toggle="popover" title="Popover" data-bs-content="Popover content">Click</button>
+    </div>
+
+
+    <!-- Scrollspy -->
+    <nav id="navbar-example" class="navbar navbar-light bg-light">
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a class="nav-link" href="#section1">Section 1</a></li>
+        </ul>
+    </nav>
+    <div id="section1" class="container mt-4" style="height: 100vh;">Scrollspy Section</div>
+
+
+    <!-- Offcanvas -->
+    <div class="container mt-4">
+        <h2>Offcanvas Example</h2>
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">
+            Show Offcanvas
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Offcanvas Title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                Content inside offcanvas.
+            </div>
+        </div>
+    </div>
+
+    <!-- Utility Classes Example -->
+    <div class="container mt-4">
+        <h2 class="text-center text-danger">Utility Classes Examples</h2>
+        
+        <!-- Margin and Padding -->
+        <div class="border border-primary p-3 m-3">
+            <p>This div has padding and margin applied.</p>
+        </div>
+
+        <!-- Visibility Utilities -->
+        <div class="d-none d-md-block">
+            <p>This text is hidden on extra small screens but visible on medium and larger screens.</p>
+        </div>
+
+        <!-- Border and Rounded Corners -->
+        <div class="border rounded p-3">
+            <p>This div has a border and rounded corners.</p>
+        </div>
+    </div>
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl);
+        });
+    </script>
 </body>
 </html>
