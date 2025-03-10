@@ -3,78 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About My Family</title>
+    <title>Bootstrap Demo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Main Heading -->
-    <h1>About My Family</h1>
+    <!-- Container with border -->
+    <div class="container border p-3 mt-3">
+        <h1 class="text-primary">About My Family</h1>
+        <h2 class="text-success">Meet My Parents</h2>
+        <p class="lead">My family means everything to me. My parents have always been a source of <strong>strength</strong> and <em>inspiration</em>.</p>
+        
+        <!-- Image variations -->
+        <img src="img/family-photo.jpg" class="img-thumbnail" alt="Family Thumbnail">
+        <img src="img/family-photo.jpg" class="rounded" alt="Rounded Corners" width="150">
+        <img src="img/family-photo.jpg" class="rounded-circle" alt="Circle Image" width="150">
+    </div>
 
-    <!-- Subheading -->
-    <h2>Meet My Parents</h2>
+    <!-- Grid system -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-3"><button class="btn btn-primary">Primary Button</button></div>
+            <div class="col-lg-3"><button class="btn btn-secondary">Secondary</button></div>
+            <div class="col-lg-3"><button class="btn btn-danger" disabled>Disabled</button></div>
+            <div class="col-lg-3"><button class="btn btn-warning">Warning</button></div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-3"><button class="btn btn-info">Info Button</button></div>
+            <div class="col-lg-3"><button class="btn btn-light">Light Button</button></div>
+            <div class="col-lg-3"><button class="btn btn-dark">Dark Button</button></div>
+            <div class="col-lg-3"><button class="btn btn-success">Success Button</button></div>
+        </div>        
+    </div>
 
-    <!-- Paragraph about family with strong and em tags -->
-    <p>
-        My family means everything to me. My parents have always been a source of 
-        <strong>strength</strong> and <em>inspiration</em> in my life. 
-        They taught me the importance of kindness and perseverance.
-    </p>
+    <!-- Table examples -->
+    <div class="container mt-4">
+        <h2>Family Members Overview</h2>
+        <table class="table table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th>Name</th>
+                    <th>Role</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Kevin</td><td>Father</td></tr>
+                <tr><td>Jennifer</td><td>Mother</td></tr>
+            </tbody>
+        </table>
+        
+        <h2 class="mt-4">Extended Family Overview</h2>
+        <table class="table table-bordered table-hover">
+            <thead class="table-primary">
+                <tr>
+                    <th>Name</th>
+                    <th>Relation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Emily</td><td>Aunt</td></tr>
+                <tr><td>Michael</td><td>Uncle</td></tr>
+            </tbody>
+        </table>
+    </div>
 
-    <!-- Image of family -->
-    <img src="img/family-photo.jpg" alt="A picture of my family" width="300" height="200">
+    
 
-    <!-- Another subheading -->
-    <h2>Meet My Sibling</h2>
 
-    <p>
-        My sibling is my best friend and confidant. We share a lot of laughs and
-        <strong>great memories</strong>. I wouldn't trade our bond for anything.
-    </p>
+    <!-- Alerts -->
+    <div class="container mt-4">
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            Success! Your profile has been updated.
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    </div>
 
-    <!-- Links -->
-    <p>Check out some resources about family:</p>
-    <ul>
-        <li><a href="https://familyresources.com" target="_blank">Family Resources (Opens in a New Tab)</a></li>
-        <li><a href="https://parentingadvice.com">Parenting Advice (Opens in the Same Tab)</a></li>
-    </ul>
+    <!-- Buttton Groups -->
+    <div class="container mt-4">
+        <div class="btn-group mt-3" role="group" aria-label="Basic button group">
+            <button type="button" class="btn btn-primary">Left</button>
+            <button type="button" class="btn btn-secondary">Middle</button>
+            <button type="button" class="btn btn-success">Right</button>
+        </div>
+        <div class="btn-group-vertical mt-3" role="group" aria-label="Vertical button group">
+            <button type="button" class="btn btn-info">Top</button>
+            <button type="button" class="btn btn-warning">Middle</button>
+            <button type="button" class="btn btn-danger">Bottom</button>
+        </div>
+    </div>
 
-    <!-- Table -->
-    <h2>Family Members Overview</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Role</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Kevin</td>
-                <td>Father</td>
-            </tr>
-            <tr>
-                <td>Jennifer</td>
-                <td>Mother</td>
-            </tr>
-            <tr>
-                <td>Callie</td>
-                <td>Sister</td>
-            </tr>
-            <tr>
-                <td>Camryn</td>
-                <td>Sister</td>
-            </tr>
-            <tr>
-                <td>Ethan</td>
-                <td>Brother</td>
-            </tr>
-            <tr>
-                <td>Boston</td>
-                <td>Me</td>
-            </tr>
-            <tr>
-                <td colspan="2">Total Family Members: 6</td>
-            </tr>
-        </tbody>
-    </table>
+    <!-- Badges -->
+    <div class="container mt-4">
+        <h2>Meet My Sibling <span class="badge bg-primary">Best Friend</span></h2>
+        <button type="button" class="btn btn-secondary">
+            Notifications <span class="badge bg-danger">3</span>
+        </button>
+    </div>
+
+
+    <!-- Progress bars -->
+    <div class="container mt-4">
+        <div class="progress">
+            <div class="progress-bar" style="width: 50%;">50%</div>
+        </div>
+        <div class="progress mt-2">
+            <div class="progress-bar bg-success" style="width: 75%;">75%</div>
+        </div>
+    </div>
+
+    <!-- Spinners -->
+    <div class="container mt-4">
+        <div class="spinner-border text-primary"></div>
+        <div class="spinner-grow text-danger"></div>
+        <button class="btn btn-primary" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            Loading...
+        </button>        
+    </div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
